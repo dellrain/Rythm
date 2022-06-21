@@ -9,25 +9,39 @@
         }
 
         body {
-            background: url(main-bg/sakura.gif) no-repeat;
+            background: url(main-bg/nightcity.gif) no-repeat;
             background-position-y: center;
-            background-size: 100%;
+            background-size: 115%;
+            align-items: center;
+            justify-content: center;
+            justify-content: center;
+            font-family: "Montserrat", sans-serif;
         }
-
-        stroke {
-            font: 2em Arial sans-serif;
-            text-shadow: black 0 0 2px;
+        button {
+            padding: 10px;
+            background: #ffffff;
+            border: 2px solid #fe67aa;
+            cursor: pointer;
+            text-align: center;
         }
+        h1 {
+            
+            text-shadow: 5px 0 5px #fe67aa,
+                        0 5px 5px #fe67aa, 
+                        -5px 0 5px #fe67aa, 
+                        0 -5px 5px #fe67aa;
+        }
+        p.description { text-align: center;
+            text-align:justify;
+            text-indent: 30px;}
     </style>
 </head>
 
 <link rel="shortcut icon" href="logo\favicon.ico" type="image/x-icon">
 <body>
-<font color="#FF69B4">
-    <h1 align="center">
-        Ритм Игры
-    </h1>
-    <p align="center">
+    <font color="White">
+        <h1 align = "center">Ритм Игры</h1>
+    <p align="center">>
         <a href="donate.html" onclick="increaseCountPagesVisited()">
             <button class="content">Donate</button>
         </a>
@@ -43,20 +57,21 @@
         <a href="game/game.html" onclick="increaseCountPagesVisited()">
             <button class="content">Игра</button>
         </a>
-        <a href="login.php">
+        <a href="login.php" onclick="increaseCountPagesVisited()">
             <button class="content">Личный кабинет</button>
         </a>
     </p>
 </font>
 <hr>
 <font color="#ff8597">
-    <p align="center">Ритм игра (англ. Rhythm game, rhythm action) — жанр компьютерных игр, где во главу ставится
-        музыкальная составляющая, а от игрока требуется наличие чувства ритма. Игры данного жанра берут за основу танцы
-        или исполнение группой музыкальных композиций. Игроки должны в соответствии с тем, что демонстрируется на
-        экране, нажимать определённые кнопки или выполнять танцевальные движения. В случае успеха начисляются очки.</p>
+<p class="description">Ритм игра (англ. Rhythm game, rhythm action) — жанр компьютерных игр, где во главу ставится
+ музыкальная составляющая, а от игрока требуется наличие чувства ритма. Игры данного жанра берут за основу танцы
+или исполнение группой музыкальных композиций. Игроки должны в соответствии с тем, что демонстрируется на
+экране, нажимать определённые кнопки или выполнять танцевальные движения. В случае успеха начисляются очки.</p>
 </font>
 <p align="center">
-    <img width="300px" height="300px" src="logo/logo.png">
+    <img width="400px" height="400px" src="logo/logo.png">
+</p>
 <address>
     <a href="mailto:username@server.ru">E-mail: rhytmgames@rg.su</a>
 </address>
