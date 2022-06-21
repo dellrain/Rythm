@@ -1,0 +1,90 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script>
+        var space = "   //  ";
+        var speed = "200";
+        var pos = 0;
+        var msg = "About";
+
+        function Scroll() {
+            document.title = msg.substring(pos, msg.length) + space + msg.substring(0, pos);
+            pos++;
+            if (pos > msg.length) pos = 0;
+            window.setTimeout("Scroll()", speed);
+        }
+
+        Scroll();
+    </script>
+    <title>ut // Abo</title>
+    <style>
+        html {
+            height: 100%;
+        }
+
+        body {
+            background: url(about/sakura.jpg) no-repeat;
+            background-position-y: center;
+            background-size: 100%;
+        }
+    </style>
+</head>
+<link rel="shortcut icon" href="logo/favicon.ico" type="image/x-icon">
+<body>
+<font color="purple">
+    <h1 align="center">Об авторе</h1>
+    <p align="center">
+        <a href="index.html" onclick="increaseCountPagesVisited()">
+            <button class="content">Главная</button>
+        </a>
+        <a href="donate.html" onclick="increaseCountPagesVisited()">
+            <button class="content">Donate</button>
+        </a>
+        <a href="map.html" onclick="increaseCountPagesVisited()">
+            <button class="content">Связь с нами</button>
+        </a>
+        <a href="gallery.html" onclick="increaseCountPagesVisited()">
+            <button class="content">Фотогалерея</button>
+        </a>
+        <a href="game/game.html" onclick="increaseCountPagesVisited()">
+            <button class="content">Игра</button>
+        </a>
+        <a href="login.php">
+            <button class="content">Личный кабинет</button>
+        </a>
+    </p>
+</font>
+<hr>
+<style type="text/css">
+    p {
+        color: darkviolet;
+        font-size: 30px;
+    }
+</style>
+<img align="right" src="about/alexey.jpg" width="358" height="480">
+<p align="left">ФИО автора: Ткаченко Алексей Юрьевич</p>
+<p align="left">ВГУ, ФКН, ИСИТ, 1 курс</p>
+<br>
+<style type="text/css">
+    h2 {
+        color: darkblue;
+        font-size: 20px;
+    }
+</style>
+<h2 align="left">Сайт создан на языке гипертекстовой разметки HTML. <br>
+    При создании сайта была взята информация со следующих интернет ресурсов:
+    <ul>
+        <li><a href="https://osu.ppy.sh/home" target="_blank">osu.ppy.sh</a></li>
+        <li><a href="https://ru.wikipedia.org/wiki/Osu!" target="_blank">wikipedia.org/wiki/Osu!</a></li>
+        <li><a href="https://yandex.ru/images/search?from=tabbar&text=osu" target="_blank">yandex.ru/images/osu</a></li>
+    </ul>
+</h2>
+<br>
+<address>
+    <p><a href="mailto:dellrain@yandex.ru">E-mail:dellrain@yandex.ru</a></p>
+</address>
+<p style="display: inline">Amount of visited pages:</p>
+<p style="display: inline" class="amountPages"></p>
+<script src="javascript/script.js"></script>
+</body>
+</html>

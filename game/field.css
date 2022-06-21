@@ -1,0 +1,41 @@
+body {
+    background: whitesmoke;
+    font-size: 30px;
+}
+
+.paper {
+    background-image: url(copybook-bg.jpg);
+    position: relative;
+    border: 2px solid black;
+    width: 1000px;
+    height: 600px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+h1 {
+    text-align: center;
+}
+span {
+    display: block;
+    position: absolute;
+    width: 100px;
+    height: 50px;
+    padding: 0 5px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+    top: 400px;
+    cursor: pointer;
+
+}
+.yes {
+    background: greenyellow;
+    left: 200px
+}
+.no {
+    background: red;
+    left: 600px;
+    transition: .1s;
+    z-index: 1;
+}

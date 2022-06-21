@@ -1,0 +1,77 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script>
+        var space = "   //  ";
+        var speed = "200";
+        var pos = 0;
+        var msg = "Donate";
+
+        function Scroll() {
+            document.title = msg.substring(pos, msg.length) + space + msg.substring(0, pos);
+            pos++;
+            if (pos > msg.length) pos = 0;
+            window.setTimeout("Scroll()", speed);
+        }
+
+        Scroll();
+    </script>
+    <title>mes // Rhytm Ga</title>
+    <style>
+        html {
+            height: 100%;
+        }
+
+        body {
+            background: url(donate/2tAa3WCTSPE.jpg) no-repeat;
+            background-position-y: center;
+            background-size: 100%;
+        }
+    </style>
+</head>
+<link rel="shortcut icon" href="logo/favicon.ico" type="image/x-icon">
+<body>
+<font color="red">
+    <h1 align="center">
+        Поддержать нас
+    </h1>
+    <p align="center">
+
+        <a href="index.html" onclick="increaseCountPagesVisited()">
+            <button class="content">Главная</button>
+        </a>
+        <a href="map.html" onclick="increaseCountPagesVisited()">
+            <button class="content">Связь с нами</button>
+        </a>
+        <a href="gallery.html" onclick="increaseCountPagesVisited()">
+            <button class="content">Фотогалерея</button>
+        </a>
+        <a href="about.html" onclick="increaseCountPagesVisited()">
+            <button class="content">Об авторе</button>
+        </a>
+        <a href="game/game.html" onclick="increaseCountPagesVisited()">
+            <button class="content">Игра</button>
+        </a>
+        <a href="login.php">
+            <button class="content">Личный кабинет</button>
+        </a>
+    </p>
+</font>
+<hr>
+<font color="#ffffff">
+    <p align="center">Почему вы должны поддержать нас?</p></font>
+<font color="ffff00">
+    <li align="center">Бесплатное участие в ежемесячных конкурсах
+    <li align="center">Новостная рассылка
+    <li align="center">Золотой никнейм на форуме
+    <li>
+</font>
+
+<address>
+    <a href="mailto:username@server.ru">E-mail: rhytmgames@rg.su</a>
+</address>
+<p style="display: inline">Количество посещённых страниц:</p>
+<p style="display: inline" class="amountPages"></p>
+<script src="javascript/script.js"></script>
+</body>
+</html>

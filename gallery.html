@@ -1,0 +1,84 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script>
+        var space = "   //  ";
+        var speed = "200";
+        var pos = 0;
+        var msg = "Photo";
+
+        function Scroll() {
+            document.title = msg.substring(pos, msg.length) + space + msg.substring(0, pos);
+            pos++;
+            if (pos > msg.length) pos = 0;
+            window.setTimeout("Scroll()", speed);
+        }
+
+        Scroll();
+    </script>
+    <title>mes // Rhytm Ga</title>
+    <style>
+        html {
+            height: 100%;
+        }
+
+        body {
+            background: url(main-bg/giphy.gif);
+            background-position-y: center;
+            background-size: 100%;
+        }
+
+        stroke {
+            font: 2em Arial . sans-serif;
+            text-shadow: black 0 0 2px;
+        }
+    </style>
+</head>
+
+<link rel="shortcut icon" href="logo/favicon.ico" type="image/x-icon">
+<body>
+
+<font color="red">
+    <h1 style="text-align: center;">Фотогалерея</h1>
+    <p align="center">
+
+        <a href="index.html" onclick="increaseCountPagesVisited()">
+            <button class="content">Главная</button>
+        </a>
+        <a href="donate.html" onclick="increaseCountPagesVisited()">
+            <button class="content">Donate</button>
+        </a>
+        <a href="map.html" onclick="increaseCountPagesVisited()">
+            <button class="content">Связь с нами</button>
+        </a>
+        <a href="about.html" onclick="increaseCountPagesVisited()">
+            <button class="content">Об авторе</button>
+        </a>
+        <a href="game/game.html" onclick="increaseCountPagesVisited()">
+            <button class="content">Игра</button>
+        </a>
+        <a href="login.php">
+            <button class="content">Личный кабинет</button>
+        </a>
+    </p>
+    <hr>
+    <div id="gall">
+        <img src="gallery\2.jpg" tabindex="0" border="3"/>
+        <img src="gallery\3.jpg" tabindex="0" border="3"/>
+        <img src="gallery\4.jpg" tabindex="0" border="3"/>
+    </div>
+
+</font>
+<hr>
+<font color="#ff8597">
+
+    </div>
+    </div>
+    <address>
+        <a href="mailto:username@server.ru">E-mail: rhytmgames@rg.su</a>
+    </address>
+    <p style="display: inline">Количество посещённых страниц:</p>
+    <p style="display: inline" class="amountPages"></p>
+    <script src="javascript/script.js"></script>
+</body>
+</html>
